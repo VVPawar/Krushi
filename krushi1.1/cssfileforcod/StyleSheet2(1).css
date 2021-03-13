@@ -1,0 +1,20 @@
+﻿body{background:url(assets/img/white_leather.png) repeat 0 0; }
+
+#myCarousel.homCar .item img{width:100%; max-height:400px}
+#myCarousel .btn {border: 0 none;border-radius: 0 0 0 0;bottom: 49px;font-size: 18px;line-height: 42px;padding: 0 28px;position: absolute;right: 0;text-shadow: 0 0 0 transparent;}	
+#myCarousel{position:relative; margin: 0;}
+.navbar-inner {padding-left: 0;padding-right: 0;}
+.thumbnail .btn{ border-radius: 0 0 0 0;}
+.thumbnail h4{line-height:42px}
+.thumbnail img{ max-width:100%}
+.thumbnail:hover {border: 1px solid #CACACA;}
+.form-horizontal.qtyFrm .control-label{text-align: left;}
+.form-horizontal.qtyFrm .control-label span{font-size:18px}
+.clr{clear:both;}
+.moreOptopm.carousel .item img{padding:2px; border:1px solid #ddd}
+.moreOptopm.carousel .item img:hover{ border:1px solid pink}
+.carousel .item > img {display:inline;}
+.moreOptopm{min-height:116px}
+.shopBtn {min-height: 34px;font-size: 14px;font-weight: bold;line-height: 34px;text-align: center;color: #fff;border-radius: 2px;background: #f89406;display:inline-block;padding:0 12px;border:0;}
+.defaultBtn {min-height: 34px;font-size: 14px;font-weight: bold;line-height: 34px;text-align: center;border-radius: 2px;display:inline-block;padding:0 12px;color: #666;text-decoration: none;background: #e6e6e6;border:0;}
+.shopBtn:hover {color: #fff; text-decoration:none; background:#F86706}

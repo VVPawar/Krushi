@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="krushi1._1.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+ <link href="master.css" rel="stylesheet" />
+    <link href="main.css" rel="stylesheet" />
+    <link href="util.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+   <style>
+       .dropdown-content 
+       {
+           width:auto;
+           align-content:center;
+           height:auto;
+           background:#ffffff;
+       }
+       .hoverm
+       {
+           background:#808080;
+       }
+       .hoverm:hover
+       {
+           background:#ff0000;
+           cursor:pointer;
+       }
+       
+   </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+<div>
+    <h1>Shetipurak</h1>
+</div>
+  <div class="navbar">
+           <br />
+ <asp:Button ID="Button10" runat="server" Text="Home" CssClass="hoverm" Font-Size="Large" Height="38px" Width="118px" BackColor="#333333" ForeColor="White" OnClick="Button10_Click"/>
+<div class="dropdown">
+    <button class="dropbtn" style="height: 18px" >Categories <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+        <center>
+        <asp:Button ID="Button1" runat="server" border="solid" BorderColor="White" Text="Fertilizer" Font-Size="Large" BackColor="White"  OnClick="Button1_Click" /><br />
+        <asp:Button ID="Button4" runat="server" border="solid" BorderColor="White" Text="Pestisides" Font-Size="Large" BackColor="White" OnClick="Button4_Click"/><br />
+        <asp:Button ID="Button5" runat="server" Text="Seeds" Font-Size="Large" BackColor="White" OnClick="Button5_Click"/><br />
+        <asp:Button ID="Button6" runat="server" Text="Equipments" Font-Size="Large" BackColor="White" OnClick="Button6_Click"/>
+            </center>
+    </div>
+  </div>
+
+      <asp:Button ID="Button7" runat="server" Text="Contact" Font-Size="Large" Height="38px" Width="118px" BackColor="#333333" ForeColor="White" OnClick="Button7_Click" />
+      <asp:Button ID="Button8" runat="server" Text="About us" Font-Size="Large" Height="38px" Width="118px" BackColor="#333333" ForeColor="White" OnClick="Button8_Click" />
+      <asp:Button ID="Button9" runat="server" Text="My Cart" CssClass="hoverm" Font-Size="Large" Height="38px" Width="118px" BackColor="#333333" ForeColor="White" OnClick="Button9_Click" />
+
+           <br />
+           <br />
+
+      <asp:TextBox ID="TextSearch" runat="server" placeholder="Search" Width="415px" Height="31px"></asp:TextBox>
+      &nbsp;&nbsp;
+      <asp:Button ID="Button2" runat="server" Text="Search" Width="93px" Height="36px" OnClick="Button2_Click"/>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <asp:Button ID="Additem" runat="server" Text="Add item" CssClass="auto-style1" Height="38px" Width="118px" OnClick="Additem_Click" Visible="False" />
+           &nbsp;&nbsp;&nbsp;
+           <asp:Button ID="Button3" runat="server" Height="36px" OnClick="Button3_Click" Text="Signout" Width="88px" />
+      &nbsp;&nbsp;
+           <asp:Button ID="Orderdetails" runat="server" Height="36px" OnClick="Button11_Click" Text="Order Details" Visible="False" Width="108px" />
+      <br />
+ 
+</div>
+        
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+         </form>
+</body>
+</html>
